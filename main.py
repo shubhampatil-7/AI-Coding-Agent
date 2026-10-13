@@ -1,7 +1,10 @@
 import os
+import argparse
+from typing import cast
+
 from dotenv import load_dotenv
 from openai import OpenAI
-import argparse
+from openai.types.chat import ChatCompletionMessageParam
 
 
 def main():
