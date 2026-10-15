@@ -4,6 +4,10 @@ A lightweight local AI coding assistant inspired by tools like Claude Code. This
 
 The current version is intentionally simple: it exposes a CLI that sends a user prompt to an OpenAI-compatible API via OpenRouter and prints the response. The repository also includes a small calculator app used as a demo of a modular project structure and command-line tool patterns.
 
+### Standard Agentic Workflow
+
+![alt text](image.png)
+
 ## Why this project exists
 
 The goal is to explore the building blocks of an agentic coding environment:
