@@ -12,7 +12,6 @@ def test() -> None:
     result = get_file_content("calculator", "pkg/calculator.py")
     print(result)
     
- 
     result = get_file_content("calculator", "/bin/cat")
     print(result)
 
