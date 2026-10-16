@@ -14,8 +14,8 @@ class Calculator:
         self.precedence: dict[str, int] = {
             "+": 1,
             "-": 1,
-            "*": 2,
-            "/": 2,
+            "*": 3,
+            "/": 3,
         }
 
     def evaluate(self, expression: str) -> float | None:

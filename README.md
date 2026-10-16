@@ -1,8 +1,8 @@
 # AI Agent
 
-A lightweight local AI coding assistant inspired by tools like Claude Code. This project is a small Python-based experiment for sending prompts to an LLM, retrieving a response, and extending the workflow toward file-aware, code-editing agent behavior.
+A lightweight AI coding assistant inspired by tools like **Claude Code**. This project is a small Python-based experiment for sending prompts to an LLM, retrieving a response, and extending the workflow toward file-aware, code-editing agent behavior.
 
-The current version is intentionally simple: it exposes a CLI that sends a user prompt to an OpenAI-compatible API via OpenRouter and prints the response. The repository also includes a small calculator app used as a demo of a modular project structure and command-line tool patterns.
+The current version is intentionally simple: it exposes a CLI that sends a user prompt to an OpenAI-compatible API via **OpenRouter** and prints the response. The repository also includes a small calculator app used as a demo of a modular project structure and command-line tool patterns.
 
 ### Standard Agentic Workflow
 
@@ -27,25 +27,6 @@ This is not a full clone of Claude Code yet. Instead, it is a minimal starting p
 - Simple project layout for separating agent logic from example tools
 - Calculator sample app with tests to demonstrate a realistic project structure
 
-## Project structure
-
-```text
-ai-agent/
-├── main.py                  # CLI entry point for the AI agent
-├── pyproject.toml           # Python project metadata and dependencies
-├── README.md                # Project documentation
-├── .env                     # Local environment variables (not committed)
-├── calculator/
-│   ├── main.py              # Command-line calculator app
-│   ├── tests.py             # Unit tests for calculator logic
-│   └── pkg/
-│       ├── calculator.py    # Expression evaluator
-│       └── render.py        # JSON rendering helper
-├── functions/
-│   └── get_files_info.py    # Placeholder for future file-inspection helper
-└── .venv/                   # Local virtual environment (optional)
-```
-
 ## Architecture
 
 At the moment, the core flow is very straightforward:
@@ -54,7 +35,8 @@ At the moment, the core flow is very straightforward:
 2. The application loads the environment variable for the API key.
 3. It creates an OpenAI client pointed at OpenRouter.
 4. It sends the prompt to the model.
-5. It prints the completion content to the terminal.
+5. Performs neccessary Actions it needs.
+6. Only comes back once it has achieved it's objective (basically loops).
 
 This gives the project a clear base to extend with agent-style capabilities such as:
 

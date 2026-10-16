@@ -1,14 +1,40 @@
-# Python-generated files
+# Python bytecode and caches
 __pycache__/
-*.py[oc]
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Build and packaging output
 build/
 dist/
 wheels/
-*.egg-info
+*.egg-info/
 
-# Virtual environments
-.venv
+# Test and coverage output
+.coverage
+.coverage.*
+htmlcov/
 
-#environments varibles
-.env
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*~
 
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE metadata
+.idea/
