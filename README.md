@@ -1,4 +1,4 @@
-# AI Agent
+# Code-Agent
 
 A lightweight AI coding assistant inspired by tools like **Claude Code**. This project is a small Python-based experiment for sending prompts to an LLM, retrieving a response, and extending the workflow toward file-aware, code-editing agent behavior.
 
